@@ -45,4 +45,6 @@ jobs:
 
       - name: Next version
         if: ${{ github.event_name == 'push' && github.ref_name == 'main' }}
-        run: npm version patch -m "[skip ci] Prepare version %s"
+        run: |
+          npm version patch -m "[skip ci] Prepare version %s"
+          git push
