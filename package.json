@@ -1,6 +1,6 @@
 {
   "name": "@astlaure/express-tools",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Express Tools to remove boilerplate",
   "main": "dist/cjs/main.js",
   "module": "dist/esm/main.js",
