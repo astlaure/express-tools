@@ -10,8 +10,6 @@ on:
 
 env:
   NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-  GIT_NAME: 'github-actions[bot]'
-  GIT_EMAIL: 'github-actions[bot]@users.noreply.github.com'
 
 jobs:
   build:
@@ -23,8 +21,8 @@ jobs:
 
       - name: Setup Git
         run: |
-          git config --global user.name ${{ GIT_NAME }}
-          git config --global user.email ${{ GIT_EMAIL }}
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Setup node
         uses: actions/setup-node@v4
